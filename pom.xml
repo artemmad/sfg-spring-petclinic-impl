@@ -21,11 +21,6 @@
     <properties>
         <java.version>11</java.version>
     </properties>
-    <dependencies>
-
-
-
-    </dependencies>
 
     <build>
         <plugins>
@@ -41,7 +36,20 @@
                     </excludes>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <goal>install</goal>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/artemmad/sfg-spring-petclinic.git</developerConnection>
+    </scm>
 
 </project>
