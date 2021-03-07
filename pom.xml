@@ -14,7 +14,7 @@
     </parent>
     <groupId>ru.realityfamily</groupId>
     <artifactId>sfg-spring-petclinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>sfg-spring-petclinic</name>
     <description>sfg pet clinic project</description>
     <properties>
@@ -49,7 +49,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/artemmad/sfg-spring-petclinic.git</developerConnection>
-      <tag>0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
