@@ -6,8 +6,6 @@ import ru.realityfamily.sfgspringpetclinic.model.Owner;
 import ru.realityfamily.sfgspringpetclinic.model.Vet;
 import ru.realityfamily.sfgspringpetclinic.services.OwnerService;
 import ru.realityfamily.sfgspringpetclinic.services.VetService;
-import ru.realityfamily.sfgspringpetclinic.services.map.OwnerServiceMap;
-import ru.realityfamily.sfgspringpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
